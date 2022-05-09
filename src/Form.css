@@ -1,25 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .App{
     
 }
-input{
+.container{
+    margin: 30px auto;
+    width: 400px;
+    height: 450px;
+    background-color: rgba(232, 225, 236, 0.589);
+    border-radius: 20px;
    
-    margin: 5px;
+
+}
+input{
+    
+    padding: 3px;
+    margin: 10px;
     font-size: 20px;
     outline: none;
     border-style: none;
-    border-bottom: 2px solid rgb(141, 11, 167);;
+    border-bottom: 2px solid rgb(141, 11, 167);
+  
 }
 label{
     font-size: 22px;
 }
 button{
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 20px;
     background-color: rgb(141, 11, 167);
     border-style: none;
     color: white;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-right: 210px;
 }
 button:hover{
     background-color: rgb(204, 27, 239);
@@ -28,6 +48,30 @@ button:hover{
     background-color: crimson;
     color: white;
   font-size: 30px !important;
+  margin-bottom: 30px;
    
     
+}
+
+.error{
+    color: red;
+}
+.radio label{
+    font-size: 17px;
+}
+.checkbox label{
+    font-size: 15px;
+    
+}
+.checkbox{
+    margin-top: 6px;
+    margin-right: 50px;
+}
+input[type=text]{
+    width: 300px;
+    background: transparent;
+    margin-top: 25px;
+}
+.content{
+    margin-top: 40px;
 }
