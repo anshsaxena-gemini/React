@@ -77,23 +77,23 @@ function Register(){
                 <div className="error">
                 <ErrorMessage name="phone"/>
                 </div>
-                {/* <div className="radio">
-                    <label for="gender">Gender :   
-                    <input type="radio" id="male" name="gender[0]"
+                <div className="radio">
+                    <label for="gender">Gender :   </label>
+                    <input type="radio" id="male" name="gender"
                     
-                    ></input></label>
-                    <label for="male">Male
-                    <input type="radio" id="female" name="gender[1]"
-                    ></input></label>
-                    <label for="female">Female
+                    ></input>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender"
+                    ></input>
+                    <label for="female">Female</label>
 
                     <input type="radio" id="other" name="gender"
                     
-                    ></input></label>
+                    ></input>
                     <label for="other">Other</label>
                   
-                </div> */}
-                <div className="error">
+                </div> 
+                 <div className="error">
                 <ErrorMessage name="gender"/>
                 </div>
                
