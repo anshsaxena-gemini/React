@@ -7,12 +7,13 @@ import reportWebVitals from './reportWebVitals';
 import Form from './Form';
 import Greet from './components/Greet';
 import Signup from './Signup';
+import Register from './components/Register';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Signup></Signup>
+   <Register></Register>
   </React.StrictMode>
 );
 
