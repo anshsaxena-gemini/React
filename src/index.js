@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import UseStates from './Hooks/UseStates';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -8,12 +7,14 @@ import Form from './Form';
 import Greet from './components/Greet';
 import Signup from './Signup';
 import Register from './components/Register';
+import HookUseState1 from './Hooks/HookUseState1';
+import HookUseState2 from './Hooks/HookUseState2';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <Register></Register>
+   <HookUseState2></HookUseState2>
   </React.StrictMode>
 );
 

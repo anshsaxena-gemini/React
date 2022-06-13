@@ -1,10 +1,12 @@
 import React from "react";
 import {Formik,Form,Field, ErrorMessage} from 'formik';
+import { useState } from "react";
 import * as yup from 'yup';
 
+  
 
 const initialValues = {
-    firstName:"",
+    userName:"",
     lastName :"",
     email: "",
     gender: "",
@@ -25,7 +27,24 @@ const onSubmit =(values) =>{
     console.log(values);
 }
 
+
 function Register(){
+
+    const[formValues,setFormValues] = useState({}); // {} is a object
+    const handleInputChange = (event) =>
+    {
+        const name = event.target.name;
+
+      
+        const value = event.target.value;
+       
+        
+       setFormValues({...formValues,[name]:value})
+  
+    };
+    const handle = () => {
+        localStorage.setItem("name",formValues.firstName)
+        }
 
     return(
     <Formik 
@@ -43,6 +62,7 @@ function Register(){
                     <Field type="text"
                     name="firstName"
                     placeholder="FirstName"
+                    onChange={handleInputChange}
                     />
                 </div>
                 <div className="error">
@@ -54,6 +74,7 @@ function Register(){
                     <Field type="text"
                      name="lastName"
                      placeholder="LastName"
+                     onChange={handleInputChange}
                     />
                 </div>
                 <div className="error">
@@ -63,6 +84,7 @@ function Register(){
                     <Field type="text"
                     name="email"
                     placeholder="Email"
+                    onChange={handleInputChange}
                     />
                 </div>
                 <div className="error">
@@ -72,6 +94,7 @@ function Register(){
                     <Field type="text"
                      name="phone"
                      placeholder="Phone Number"
+                     onChange={handleInputChange}
                     />
                 </div>
                 <div className="error">
@@ -79,15 +102,15 @@ function Register(){
                 </div>
                 <div className="radio">
                     <label for="gender">Gender :   </label>
-                    <input type="radio" id="male" name="gender"
+                    <input type="radio" id="male" name="gender" onChange={handleInputChange}
                     
                     ></input>
                     <label for="male">Male</label>
-                    <input type="radio" id="female" name="gender"
+                    <input type="radio" id="female" name="gender" onChange={handleInputChange}
                     ></input>
                     <label for="female">Female</label>
 
-                    <input type="radio" id="other" name="gender"
+                    <input type="radio" id="other" name="gender" onChange={handleInputChange}
                     
                     ></input>
                     <label for="other">Other</label>
@@ -100,6 +123,7 @@ function Register(){
                 <div className="checkbox">
                     <Field type="checkbox"
                      name="tandc" 
+                     onChange={handleInputChange}
                     />
                      <label for="">I agree to the Terms and Conditions</label>  
                 </div>
@@ -107,7 +131,7 @@ function Register(){
                 <ErrorMessage name="tandc"/>
                 </div>
                 <div>
-                  <button type="submit">Submit</button>
+                  <button type="submit" onClick={handle}>Submit</button>
                 </div>
                </div>
     </Form>
@@ -115,4 +139,5 @@ function Register(){
     </Formik>
     )
 }
+
 export default Register;

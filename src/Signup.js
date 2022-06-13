@@ -20,7 +20,7 @@ function Signup(){
                email : yup.string().required('Email is required').matches(/^\w+@[a-zA-Z_.]+?\.[a-zA-Z]{2,3}$/,"Must be a valid Email !"),
                gender :  yup.string().required("Select the gender"),
                phone : yup.string().required("Phone Number is required !").matches(/^\d{10}$/,"Not Valid !"),
-               tandc: yup.boolean()
+               tandc: yup.bool()
                .oneOf([true], "You must accept the terms and conditions")
 
            }
@@ -32,6 +32,9 @@ function Signup(){
        }
    
     );
+    const handle = () =>{
+        localStorage.setItem("name",)
+    }
     return (
         <div className="App">
             <form action="" method="post">
@@ -42,8 +45,8 @@ function Signup(){
                 <div>
                     <input type="text"
                     onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    value={formik.values.firstName}
+                    // onBlur={formik.handleBlur}
+                    // value={formik.values.firstName}
                     name="firstName"
                     placeholder="FirstName"
                     />
@@ -91,13 +94,13 @@ function Signup(){
                     <label for="gender">Gender :   </label>
                     <input type="radio" id="male" name="gender"
                      onChange={formik.handleChange}
-                     onBlur={formik.handleBlur}
+                    //  onBlur={formik.handleBlur}
                   
                     ></input>
                     <label for="male">Male</label>
                     <input type="radio" id="female" name="gender"
                      onChange={formik.handleChange}
-                     onBlur={formik.handleBlur}
+                    //  onBlur={formik.handleBlur}
                     
                     ></input>
                     <label for="female">Female</label>
@@ -105,16 +108,16 @@ function Signup(){
                     
                     <input type="radio" id="other" name="gender"
                      onChange={formik.handleChange}
-                     onBlur={formik.handleBlur}
+                    //  onBlur={formik.handleBlur}
                      
                     
                     ></input>
                     <label for="other">Other</label>
                   
                 </div>
-                <div className="error">
-                    {formik.touched.gender ? formik.errors.gender : ""}
-                </div>
+                {/* <div className="error"> */}
+                    { formik.errors.gender && <span>{formik.errors.gender}</span>}
+                {/* </div> */}
                
                 <div className="checkbox">
                
@@ -134,7 +137,7 @@ function Signup(){
                     {formik.touched.tandc ? formik.errors.tandc : ""}
                 </div>
                 <div>
-                  <button type="button" onClick={formik.handleSubmit}>Submit</button>
+                  <button type="button" onClick={handle}>Submit</button>
                 </div>
                
                </div>
