@@ -11,12 +11,13 @@ import HookUseState1 from './Hooks/HookUseState1';
 import HookUseState2 from './Hooks/HookUseState2';
 import HookUseState3 from './Hooks/HookUseState3';
 import HookUseEffect1 from './Hooks/HookUseEffect1';
+import UseEffect_Data_Fetch from './Hooks/UseEffect_Data_Fetch';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <HookUseEffect1/>
+   <UseEffect_Data_Fetch/>
   </React.StrictMode>
 );
 
