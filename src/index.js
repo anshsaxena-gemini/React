@@ -10,12 +10,13 @@ import Register from './components/Register';
 import HookUseState1 from './Hooks/HookUseState1';
 import HookUseState2 from './Hooks/HookUseState2';
 import HookUseState3 from './Hooks/HookUseState3';
+import HookUseEffect1 from './Hooks/HookUseEffect1';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <HookUseState3></HookUseState3>
+   <HookUseEffect1/>
   </React.StrictMode>
 );
 
