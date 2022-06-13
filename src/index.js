@@ -9,12 +9,13 @@ import Signup from './Signup';
 import Register from './components/Register';
 import HookUseState1 from './Hooks/HookUseState1';
 import HookUseState2 from './Hooks/HookUseState2';
+import HookUseState3 from './Hooks/HookUseState3';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <HookUseState2></HookUseState2>
+   <HookUseState3></HookUseState3>
   </React.StrictMode>
 );
 
