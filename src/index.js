@@ -12,12 +12,14 @@ import HookUseState2 from './Hooks/HookUseState2';
 import HookUseState3 from './Hooks/HookUseState3';
 import HookUseEffect1 from './Hooks/HookUseEffect1';
 import UseEffect_Data_Fetch from './Hooks/UseEffect_Data_Fetch';
+import UseEffect_Data_Fetching_OneByOne from './Hooks/UseEffect_DataFetching_OneByOne';
+import Quiz_data_fetching from './Hooks/Quiz_data_fetching';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <UseEffect_Data_Fetch/>
+   <Quiz_data_fetching/>
   </React.StrictMode>
 );
 
