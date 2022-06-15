@@ -17,12 +17,13 @@ import Quiz_data_fetching from './Hooks/Quiz_data_fetching';
 import UseReducer1 from './Hooks/UseReducer1';
 import UseReducer2 from './Hooks/UseReducer2';
 import DataFetching_UseReducer from './Hooks/DataFetching_UseReducer';
+import USeRef from './Hooks/USeRef';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <DataFetching_UseReducer/>
+  <USeRef/>
   </React.StrictMode>
 );
 
