@@ -16,12 +16,13 @@ import UseEffect_Data_Fetching_OneByOne from './Hooks/UseEffect_DataFetching_One
 import Quiz_data_fetching from './Hooks/Quiz_data_fetching';
 import UseReducer1 from './Hooks/UseReducer1';
 import UseReducer2 from './Hooks/UseReducer2';
+import DataFetching_UseReducer from './Hooks/DataFetching_UseReducer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <UseReducer2/>
+  <DataFetching_UseReducer/>
   </React.StrictMode>
 );
 
