@@ -18,12 +18,15 @@ import UseReducer1 from './Hooks/UseReducer1';
 import UseReducer2 from './Hooks/UseReducer2';
 import DataFetching_UseReducer from './Hooks/DataFetching_UseReducer';
 import USeRef from './Hooks/USeRef';
+import Expenses from './components/Expenses';
+import ShowExpenses from './components/ShowExpenses';
+import ExpensesItem from './components/ExpensesItem';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <USeRef/>
+  <ExpensesItem />
   </React.StrictMode>
 );
 
