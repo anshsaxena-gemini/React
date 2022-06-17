@@ -1,20 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
-import { Component } from 'react';
-import Greet from './components/Greet';
-import Welcome from './components/Welcome';
-import Hookcounter from './components/HookCounter';
-import Counter from './components/Counter';
-import Signup from './Signup';
+import React, { useState } from 'react';
 
-class App extends Component{
-  render(){
-    return(
-      <div className='App'>
-      
-       <Signup></Signup>
-      </div>
-    );
-  }
+import NewExpense from './components/NewExpenses/NewExpense';
+import Expenses from './components/Expenses/Expenses';
+
+const Dummy_Expenses = [
+  {
+    id: 'e1',
+    title: 'Toilet Paper',
+    amount: 94.12,
+    date: new Date(2020, 7, 14),
+  },
+  { id: 'e2', title: 'New TV', amount: 799.49, date: new Date(2021, 2, 12) },
+  {
+    id: 'e3',
+    title: 'Car Insurance',
+    amount: 294.67,
+    date: new Date(2021, 2, 28),
+  },
+  {
+    id: 'e4',
+    title: 'New Desk (Wooden)',
+    amount: 450,
+    date: new Date(2021, 5, 12),
+  },
+];
+const App = () => {
+ 
+  const [expenses,setExpenses] = useState(Dummy_Expenses);
+  const addExpenseHandler = expense => {
+    setExpenses( (prevExpense) => {
+      return [expense,...prevExpense]
+    });
+  };
+
+  // return React.createElement(
+  //   'div',
+  //   {},
+  //   React.createElement('h2', {}, "Let's get started!"),
+  //   React.createElement(Expenses, { items: expenses })
+  // );
+
+  return (
+    <div>
+      <NewExpense onAddExpense={addExpenseHandler} />
+      <Expenses items={expenses} />
+    </div>
+  );
 }
+
 export default App;
