@@ -21,12 +21,13 @@ import USeRef from './Hooks/USeRef';
 import Expenses from './components/Expenses';
 import ShowExpenses from './components/ShowExpenses';
 import ExpensesItem from './components/ExpensesItem';
+import NewExpenses from './components/NewExpenses';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <ExpensesItem />
+  <NewExpenses />
   </React.StrictMode>
 );
 
