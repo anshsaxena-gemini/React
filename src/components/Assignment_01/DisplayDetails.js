@@ -21,8 +21,8 @@ function DisplayDetails() {
     
      
      <button type='button' onClick={showParagraph} style={
-        {color:'white',fontSize:'30px',borderStyle:'none',backgroundColor:'blue', borderRadius:'2px',
-        margin:'auto 500px'
+        {color:'white',fontSize:'25px',borderStyle:'none',backgroundColor:'crimson', borderRadius:'20px',
+        margin:'auto 520px',padding:'10px'
     
     }
 

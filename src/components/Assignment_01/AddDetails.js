@@ -1,8 +1,12 @@
 import React,{useState} from 'react'
+import './AddDetails.css';
 
 function AddDetails() {
     const [input,setInput] = useState("");
     const [list,setList] = useState([]);
+
+    
+   
 
     const handleSubmit = () =>{
     
@@ -18,18 +22,20 @@ function AddDetails() {
    
   return (
 
-    <div >
+    <div className='Container'>
   <input type='text' 
   placeholder='type something' 
-  name="conetnt" 
   onChange={(e)=>setInput(e.target.value)}
   ></input>
-   <button type='button' onClick={handleSubmit}>Add</button><br></br>
+   <button className='btn' type='button'  onClick={handleSubmit}>Add</button><br></br>
    {
-    
      list.map((data)=>(
-         <li>{data.input}</li>
-     ))
+       
+     <li
+        >{data.input}</li>
+     )
+     
+     )
     
    }
    

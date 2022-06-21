@@ -1,0 +1,23 @@
+
+.Container{
+  margin-top: 20px;
+  text-align: center;
+}
+li:nth-of-type(5n){
+ color: blue;
+  }
+ 
+input{
+    font-size: 20px;
+    width: 400px;
+}
+.btn{
+    background-color: rgb(15, 97, 70);
+    font-size: 20px;
+    padding: 5px;
+    width: 100px;
+    border-style:none;
+    margin-left: 10px;
+    color:white;
+    border-radius: 5px;
+}
