@@ -22,8 +22,11 @@ function AddDetails() {
             
             ]
         )
+      
           }
-       
+      setInput("")
+      
+   
     }
    
   return (
@@ -33,6 +36,7 @@ function AddDetails() {
   className={`${styles.userInput} ${error ? styles.invalid : ''}`}
   type='text' 
   placeholder='type something' 
+  value={input}
   onChange={(e)=>setInput(e.target.value)}
   ></input>
    <button className={styles.btn} type='button' onClick={handleSubmit}>Add</button><br></br>
