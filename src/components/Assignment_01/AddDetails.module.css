@@ -5,9 +5,13 @@
 }
 li:nth-of-type(5n){
  color: blue;
-  }
  
-input{
+  }
+li{
+  font-size: 20px;
+}
+ 
+.userInput{
     font-size: 20px;
     width: 400px;
 }
@@ -20,4 +24,7 @@ input{
     margin-left: 10px;
     color:white;
     border-radius: 5px;
+}
+.invalid{
+  border-color: red;
 }
