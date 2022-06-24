@@ -1,0 +1,30 @@
+.Container{
+    text-align: center;
+    margin-top: 20px;
+}
+.input{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    border-radius: 5px;
+    border-color: rgb(69, 31, 206);
+    outline: none;
+    width: 400px;
+    height: 30px;
+
+}
+.btn{
+    background-color: rgb(5, 5, 160);
+    padding: 10px;
+    font-size: 23px;
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+}
+.error{
+    color: red;
+}
+.btn:disabled{
+    background-color: rgb(173, 173, 229);;
+}

@@ -3,6 +3,9 @@ import React, { useState } from 'react';
 import NewExpense from './components/NewExpenses/NewExpense';
 import Expenses from './components/Expenses/Expenses';
 import DisplayDetails from './components/Assignment_01/DisplayDetails';
+import Signup from './Signup';
+import Form from './components/Form';
+
 
 const Dummy_Expenses = [
   {
@@ -45,7 +48,7 @@ const App = () => {
     <div>
       {/* <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} /> */}
-      <DisplayDetails />
+     <Form />
     </div>
   );
 }
