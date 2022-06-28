@@ -25,9 +25,6 @@ function Form() {
         if(formik.values.name.length ===0 || formik.values.email.length===0){
             return;
         }
-        // if(formik.errors.name || formik.errors.age){
-        //     return;
-        // }
 
         alert("success")
        
